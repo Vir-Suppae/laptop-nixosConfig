@@ -30,7 +30,7 @@
 
   hardware.graphics = {
     enable = true;
-    extraPackages = [
+    extraPackages = with pkgs; [
       intel-media-driver
     ];
   };

@@ -76,14 +76,25 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    brightnessctl
     neovim
     git
     gh
     kitty
     wezterm
     brave
+    zig
+    powershell
+    dotnet-sdk
+    ripgrep
+    tree-sitter
+    elmPackages.nodejs
   ];
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+    CC = "zig cc";
+    CXX = "zig c++";
+  };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 

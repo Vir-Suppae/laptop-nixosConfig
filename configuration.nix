@@ -84,16 +84,20 @@
     wezterm
     brave
     zig
+    zls
     powershell
     dotnet-sdk
+    omnisharp-roslyn
     ripgrep
     tree-sitter
     elmPackages.nodejs
+    gcc
+    gnumake
+    pkg-config
+    vscode-langservers-extracted
   ];
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
-    CC = "zig cc";
-    CXX = "zig c++";
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

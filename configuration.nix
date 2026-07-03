@@ -114,7 +114,22 @@
     enable = true;
     xwayland.enable = true;
   };
-  programs.nix-ld.enable = true;
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      libx11
+      libGL
+      libxcursor
+      libxrandr
+      libxi
+      libxinerama
+      libxfixes
+      libxrender
+      libxext
+      wayland
+      vulkan-loader
+    ];
+  };
 
   # List services that you want to enable:
 

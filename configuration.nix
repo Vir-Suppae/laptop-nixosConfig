@@ -110,7 +110,10 @@
   #   enableSSHSupport = true;
   # };
   programs.firefox.enable = true;
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
   programs.nix-ld.enable = true;
 
   # List services that you want to enable:

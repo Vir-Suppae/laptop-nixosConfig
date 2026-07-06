@@ -88,6 +88,7 @@
     tree-sitter
     elmPackages.nodejs
     pkg-config
+    blender
   ];
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";

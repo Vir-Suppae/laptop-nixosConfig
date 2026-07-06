@@ -89,6 +89,7 @@
     elmPackages.nodejs
     pkg-config
     blender
+    hyprlauncher
   ];
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";

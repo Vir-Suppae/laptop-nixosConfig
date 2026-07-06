@@ -90,6 +90,7 @@
   ];
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
+    EARBUDS = "8C:0D:D9:70:19:0C";
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

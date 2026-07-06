@@ -64,6 +64,7 @@
   services.upower = {
     enable = true;
   };
+  services.logind.settings.Login.HandleLidSwitch = "ignore";
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users."vir-suppae" = {

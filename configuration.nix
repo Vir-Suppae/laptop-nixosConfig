@@ -112,22 +112,6 @@
     enable = true;
     xwayland.enable = true;
   };
-  programs.nix-ld = {
-    enable = true;
-    libraries = with pkgs; [
-      libx11
-      libGL
-      libxcursor
-      libxrandr
-      libxi
-      libxinerama
-      libxfixes
-      libxrender
-      libxext
-      wayland
-      vulkan-loader
-    ];
-  };
   programs.neovim = {
     enable = true;
     defaultEditor = true;

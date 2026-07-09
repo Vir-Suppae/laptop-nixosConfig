@@ -90,6 +90,8 @@
     pkg-config
     blender
     hyprlauncher
+    zig
+    zls
   ];
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
